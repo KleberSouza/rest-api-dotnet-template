@@ -36,7 +36,11 @@ namespace rest_api_dotnet_template
                     };
                 });
 
-            builder.Services.AddControllers();
+            services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                });
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
