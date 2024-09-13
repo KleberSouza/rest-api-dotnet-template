@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Kleber Jacques Ferreira de Souza",
+  "classifications": [ "WebAPI", "REST" ],
+  "identity": "rest-api-dotnet-template",
+  "name": "Template de API REST",
+  "shortName": "restapitemplate",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "rest-api-dotnet-template",
+  "preferNameDirectory": true
+}
