@@ -48,6 +48,7 @@ namespace rest_api_dotnet_template.Controllers
         [ProducesResponseType(StatusCodes.Status403Forbidden)]
         public override async Task<ActionResult> Update(int id, [FromBody] Usuario entity)
         {
+            entity.Senha = BC.HashPassword(entity.Senha);
             return await base.Update(id, entity);
         }
 
